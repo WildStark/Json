@@ -5,9 +5,9 @@ java对象和json数据之间的转换方式一般有两种，一种是引用第
 
 调用过程：
 class test{
-    int id;
-    String msg;
-    boolean error;
+	int id;
+	String msg;
+	boolean error;
 }
 test a=new test();
 a.id=10001;
@@ -15,9 +15,9 @@ a.msg="JAVABean转化为JSON~";
 a.error=true;
 
 try {
-    System.out.println(Json.toJson(a));
+	System.out.println(Json.toJson(a));
 } catch (Exception e) {
-    e.printStackTrace();
+	e.printStackTrace();
 }
 
 输出结果：
